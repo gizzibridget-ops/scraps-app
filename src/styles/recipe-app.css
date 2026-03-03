@@ -1,0 +1,40 @@
+/* Recipe App Color Palette */
+:root {
+  --bg-almond: #F0EAD8;
+  --primary-olive: #6F6C43;
+  --secondary-meadow: #ACB090;
+  --accent-sage: #99ABA6;
+  --card-paper: #FAF8F2;
+  --card-white: #FFFFFF;
+  
+  /* Font families */
+  --font-heading: 'Fredoka One', cursive;
+  --font-body: 'Baloo 2', cursive;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #1a1a1a;
+}
+
+/* iPhone 15 Pro viewport - removed max-width constraint since PhoneFrame handles it */
+#root {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Hide scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
