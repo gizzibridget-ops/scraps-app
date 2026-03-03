@@ -49,7 +49,6 @@ function RecipeCard({ recipe, index, onClick }: RecipeCardProps) {
         backgroundColor: "#FAF8F2",
         border: "2px dashed #ACB090",
         boxShadow: "0 8px 20px rgba(0, 0, 0, 0.1)",
-        width: "168px",
         minHeight: "220px",
         height: "auto",
         padding: "12px",
@@ -261,7 +260,7 @@ export function RecipeResults() {
   return (
     <div
       className="min-h-full w-full flex flex-col"
-      style={{ backgroundColor: "#F0EAD8", paddingLeft: "16px", paddingRight: "16px" }}
+      style={{ backgroundColor: "#F0EAD8", paddingLeft: "12px", paddingRight: "12px" }}
     >
       {/* Back button */}
       <motion.button
@@ -468,9 +467,8 @@ export function RecipeResults() {
             exit={{ opacity: 0 }}
             className="grid pb-6"
             style={{
-              gridTemplateColumns: "168px 168px",
-              gap: "12px",
-              justifyContent: "space-between",
+            gridTemplateColumns: "1fr 1fr",
+            gap: "10px",
             }}
           >
             {filteredRecipes.map((recipe, index) => (
